@@ -1,8 +1,10 @@
 """
 module contain the model loading and create the response functionalities.
 """
+import pickle
 import torch
-from chatapp import model_m, model_tokenizer
+model_m = pickle.load(open('model_GPT2.pkl','rb'))
+model_tokenizer = pickle.load(open('tokenizer_GPT2.pkl','rb'))
 
 def get_chat_response(text_data: str)-> dict:
 
