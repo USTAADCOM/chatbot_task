@@ -64,20 +64,14 @@
 					message = rawText;
 					var socket = io.connect('http://' + document.domain + ':' + location.port);
 					socket.emit("new_message", message);
+					count = 0
 					socket.on("chat", function(data) {
-						var botHtml = '<div class="d-flex justify-content-start mb-4"><div class="img_cont_msg"><img src="https://chatgpt-3ai.com/wp-content/uploads/2023/04/cropped-fotor_2023-4-1_14_30_8.png" class="rounded-circle user_img_msg"></div><div class="msg_cotainer">' + data + '<span class="msg_time">' + str_time + '</span></div></div>';
-						$("#messageFormeight").append($.parseHTML(botHtml));
+						if(count == 0){
+						    var botHtml = '<div class="d-flex justify-content-start mb-4"><div class="img_cont_msg"><img src="https://chatgpt-3ai.com/wp-content/uploads/2023/04/cropped-fotor_2023-4-1_14_30_8.png" class="rounded-circle user_img_msg"></div><div class="msg_cotainer">' + data + '<span class="msg_time">' + str_time + '</span></div></div>';
+						    $("#messageFormeight").append($.parseHTML(botHtml));
+						    count = 1
+						}
                     })
-					// $.ajax({
-					// 	data: {
-					// 		msg: rawText,	
-					// 	},
-					// 	type: "POST",
-					// 	url: "/get",
-					// }).done(function(data) {
-					// 	var botHtml = '<div class="d-flex justify-content-start mb-4"><div class="img_cont_msg"><img src="https://chatgpt-3ai.com/wp-content/uploads/2023/04/cropped-fotor_2023-4-1_14_30_8.png" class="rounded-circle user_img_msg"></div><div class="msg_cotainer">' + data + '<span class="msg_time">' + str_time + '</span></div></div>';
-					// 	$("#messageFormeight").append($.parseHTML(botHtml));
-					// });
 					event.preventDefault();
 				});
 			});

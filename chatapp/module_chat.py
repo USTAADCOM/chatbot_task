@@ -3,14 +3,14 @@ module contain the model loading and create the response functionalities.
 """
 import pickle
 import torch
-model_m = pickle.load(open('model_GPT2.pkl','rb'))
-model_tokenizer = pickle.load(open('tokenizer_GPT2.pkl','rb'))
+model_m = pickle.load(open('model_GPT2_small.pkl','rb'))
+model_tokenizer = pickle.load(open('tokenizer_GPT2_small.pkl','rb'))
 
-def get_chat_response(text_data: str)-> dict:
+def get_chat_response(text_data: str)-> str:
 
     """
-    method will take the text_data and return its converstaional response by using the
-    GPT2 model.
+    method will take the text_data and return its converstaional response by using 
+    the GPT2 model.
 
     Parameters:
     ----------

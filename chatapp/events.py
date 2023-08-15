@@ -1,7 +1,6 @@
 """
 routes module contain the routes for different functionalities.
 """
-
 from .module_chat import get_chat_response
 from .extensions import socketio
 
@@ -36,4 +35,5 @@ def handle_new_message(message: str, methods = ['GET', 'POST'])-> str:
         return the message return by the model.
     """
     # my_message = "Hard code message"
+    print(get_chat_response(message))
     socketio.emit("chat", get_chat_response(message))
