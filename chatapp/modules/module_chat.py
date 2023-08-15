@@ -3,39 +3,41 @@ module contain the model loading and create the response functionalities.
 """
 import pickle
 import torch
-def load_model_gpt2():
-    """
-    method will load the model and return loaded model model_GPT2.
+from run import model_m, model_tokenizer
 
-    Parameters:
-    ----------
-    None
+# def load_model_gpt2():
+#     """
+#     method will load the model and return loaded model model_GPT2.
 
-    Return:
-    ------
-    model: Any
-        return the model object loaded from model_GPT2.pkl file.
+#     Parameters:
+#     ----------
+#     None
 
-    """
-    model = pickle.load(open('model_GPT2.pkl','rb'))
-    return model
+#     Return:
+#     ------
+#     model: Any
+#         return the model object loaded from model_GPT2.pkl file.
 
-def load_gpt2_tokenizer():
-    """
-    method will load the model and return loaded model tokenizer_GPT2.
+#     """
+#     model = pickle.load(open('model_GPT2.pkl','rb'))
+#     return model
 
-    Parameters:
-    ----------
-    None
+# def load_gpt2_tokenizer():
+#     """
+#     method will load the model and return loaded model tokenizer_GPT2.
 
-    Return:
-    ------
-    model: Any
-        return the model object loaded from tokenizer_GPT2.pkl file.
+#     Parameters:
+#     ----------
+#     None
 
-    """
-    model_tokenizer = pickle.load(open('tokenizer_GPT2.pkl','rb'))
-    return model_tokenizer
+#     Return:
+#     ------
+#     model: Any
+#         return the model object loaded from tokenizer_GPT2.pkl file.
+
+#     """
+#     model_tokenizer = pickle.load(open('tokenizer_GPT2.pkl','rb'))
+#     return model_tokenizer
 
 def get_chat_response(text_data: str)-> dict:
 
@@ -54,8 +56,8 @@ def get_chat_response(text_data: str)-> dict:
         return the last response send by the chatbot as a string.
 
     """
-    model = load_model_gpt2()
-    tokenizer = load_gpt2_tokenizer()
+    model = model_m
+    tokenizer = model_tokenizer
     for step in range(6):
         # encode the new user input, add the eos_token and return a tensor in Pytorch
         new_user_input_ids = tokenizer.encode(str(text_data) +

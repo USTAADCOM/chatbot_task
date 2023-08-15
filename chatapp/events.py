@@ -2,8 +2,8 @@
 routes module contain the routes for different functionalities.
 """
 from flask_socketio import emit, send
-from .extensions import socketio
 from modules import module_chat
+from .extensions import socketio
 
 @socketio.on("connect")
 def handle_connect():
@@ -36,4 +36,4 @@ def handle_new_message(message: str, methods = ['GET', 'POST'])-> str:
         return the message return by the model.
     """
     my_message = "Hard code message"
-    socketio.emit("chat", module_chat.get_Chat_response(message))
+    socketio.emit("chat", module_chat.get_chat_response(message))
