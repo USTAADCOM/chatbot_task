@@ -43,5 +43,5 @@ ChatBot project is desigend where user can communicate with the Chatbot in real 
 python server.py
 ```
 ______________________________________
-## ## run ChatBot using on Google Colab
+## run ChatBot using on Google Colab
 ChatBot_task.ipynb file on colab 
