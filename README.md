@@ -15,7 +15,7 @@ ChatBot project is desigend where user can communicate with the Chatbot in real 
 ```bash
 pip install -r requiremens.txt
 ```
-# Live Chat with ChatBot with ngrok (Colab)
+# Live Chat with ChatBot using ngrok (Colab)
 open ChatBot_task. file for live chat
 _______________________________________
 # ChatBot with Sockets 
