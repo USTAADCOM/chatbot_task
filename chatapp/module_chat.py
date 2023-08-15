@@ -3,41 +3,7 @@ module contain the model loading and create the response functionalities.
 """
 import pickle
 import torch
-from run import model_m, model_tokenizer
-
-# def load_model_gpt2():
-#     """
-#     method will load the model and return loaded model model_GPT2.
-
-#     Parameters:
-#     ----------
-#     None
-
-#     Return:
-#     ------
-#     model: Any
-#         return the model object loaded from model_GPT2.pkl file.
-
-#     """
-#     model = pickle.load(open('model_GPT2.pkl','rb'))
-#     return model
-
-# def load_gpt2_tokenizer():
-#     """
-#     method will load the model and return loaded model tokenizer_GPT2.
-
-#     Parameters:
-#     ----------
-#     None
-
-#     Return:
-#     ------
-#     model: Any
-#         return the model object loaded from tokenizer_GPT2.pkl file.
-
-#     """
-#     model_tokenizer = pickle.load(open('tokenizer_GPT2.pkl','rb'))
-#     return model_tokenizer
+from chatapp import model_m, model_tokenizer
 
 def get_chat_response(text_data: str)-> dict:
 
