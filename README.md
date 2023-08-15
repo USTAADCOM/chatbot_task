@@ -16,7 +16,7 @@ ChatBot project is desigend where user can communicate with the Chatbot in real 
 pip install -r requiremens.txt
 ```
 ## Chat with ChatBot using ngrok (Colab)
-open ChatBot_task. file for live chat
+open ChatBot_task.ipynb file on colab 
 _______________________________________
 ## ChatBot with Sockets 
 Setup project as given above then 
