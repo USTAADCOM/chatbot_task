@@ -36,12 +36,6 @@ ChatBot project is desigend where user can communicate with the Chatbot in real 
     ├───templates
     │       chat.html
     │       index.html
-    │
-    └───__pycache__
-            events.cpython-310.pyc
-            extensions.cpython-310.pyc
-            routes.cpython-310.pyc
-            __init__.cpython-310.pyc
 ```
 
 ## run ChatBot 
