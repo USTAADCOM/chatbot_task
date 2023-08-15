@@ -8,6 +8,8 @@ ChatBot project is desigend where user can communicate with the Chatbot in real 
   
   Download Model From
   [Model](https://drive.google.com/file/d/157cGLz6s94la0G8bdzxxTOo3D7ckHB1w/view?usp=sharing) 
+
+  Copy Model in chatbot_app repo
 ## Intalltaion
 
 ```bash
