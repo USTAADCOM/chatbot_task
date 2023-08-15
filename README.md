@@ -4,12 +4,10 @@ ChatBot project is desigend where user can communicate with the Chatbot in real 
 # Setup project
   
   clone project from repo
-  https://github.com/USTAADCOM/chatbot_task.git
+  [chatbot UI](https://github.com/USTAADCOM/chatbot_task.git)
   
-  Download Model From: https://drive.google.com/file/d/157cGLz6s94la0G8bdzxxTOo3D7ckHB1w/view?usp=sharing
-  
-  
-  After Extracting Copy models in chatbot_task repo 
+  Download Model From
+  [Model](https://drive.google.com/file/d/157cGLz6s94la0G8bdzxxTOo3D7ckHB1w/view?usp=sharing) 
 ## Intalltaion
 
 ```bash
