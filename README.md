@@ -1,7 +1,7 @@
-# Internship-Tasks (Real Time ChatBot)
+## Internship-Tasks (Real Time ChatBot)
 ChatBot project is desigend where user can communicate with the Chatbot in real time.
 
-# Setup project
+## Setup project
   
   clone project from repo
   [chatbot UI](https://github.com/USTAADCOM/chatbot_task.git)
