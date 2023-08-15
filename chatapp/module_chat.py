@@ -1,7 +1,6 @@
 """
 module contain the model loading and create the response functionalities.
 """
-import pickle
 import torch
 from chatapp import model_m, model_tokenizer
 
