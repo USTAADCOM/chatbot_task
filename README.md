@@ -6,7 +6,7 @@ ChatBot project is desigend where user can communicate with the Chatbot in real 
   clone project from repo
   https://github.com/USTAADCOM/chatbot_task.git
   
-  Download Model From: https://drive.google.com/drive/u/0/my-drive
+  Download Model From: https://drive.google.com/file/d/157cGLz6s94la0G8bdzxxTOo3D7ckHB1w/view?usp=sharing
 
 ## Intalltaion
 
