@@ -2,7 +2,9 @@
 ChatBot project is desigend where user can communicate with the Chatbot in real time.
 
 ## Setup
-  
+  ``` code
+  pip install python = 3.10.10
+  ```
   clone project
   ```code
   git clone https://github.com/USTAADCOM/chatbot_task.git
